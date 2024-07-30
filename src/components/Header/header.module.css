@@ -1,0 +1,29 @@
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(18, 24, 37, 0.4);
+  height: 80px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1290px;
+}
+.nav{
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.li{
+  color: white;
+  font-weight: 600;
+}
