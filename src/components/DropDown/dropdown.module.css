@@ -1,39 +1,84 @@
-.dropdown-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .dropdown-button {
-    background-color: #4CAF50; /* Зеленый */
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .dropdown-menu {
-    display: block;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-  }
-  
-  .dropdown-menu ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .dropdown-menu ul li {
-    padding: 8px;
-    cursor: pointer;
-  }
-  
-  .dropdown-menu ul li:hover {
-    background-color: #f1f1f1;
-  }
-  
+/* .dropdownContainer {
+  position: relative;
+  display: inline-block;
+} */
+
+.dropdownButton {
+  color: white;
+  background: #be202000;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.iconPath {
+  stroke: white;
+}
+
+.dropdownButton:hover {
+  color: rgb(71, 133, 255);
+}
+
+.dropdownButton:hover .iconPath {
+  stroke: rgb(71, 133, 255); 
+}
+
+.icon.rotated {
+  transform: rotate(180deg);
+}
+
+.icon {
+  transition: transform 0.3s ease;
+  margin-left: 8px;
+}
+
+.active {
+  color: rgb(71, 133, 255);
+}
+
+.active .iconPath {
+  stroke: rgb(71, 133, 255);
+}
+
+.dropdownMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: absolute;
+  background: rgba(34, 43, 68, 1);
+  z-index: 1;
+  border-radius: 17px;
+  border: 1px solid rgba(49, 62, 98, 1);
+  margin-top: 20px;
+  width: 700px;
+  height: 224px;
+  padding: 20px;
+}
+
+.dropdownMenuOne{
+  width: 310px;
+  height: 86px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.text{
+  width: 238px;
+}
+.font600{
+  font-weight: 600;
+  font-size: 16px;
+  display: block;
+}
+.font400{
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+}
+.imgNav{
+  width: 36px;
+  height: 36px;
+}

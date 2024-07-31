@@ -1,21 +1,18 @@
-li {
-  list-style-type: none;
-  /* Убираем маркеры */
-}
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
   background: rgba(18, 24, 37, 0.4);
   height: 80px;
+  
 }
-
 .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 1290px;
+  height: 40px;
+  gap: 14px;
 }
 .nav{
   display: flex;
@@ -25,5 +22,6 @@ li {
 
 .li{
   color: white;
+  font-size: 16px;
   font-weight: 600;
 }
