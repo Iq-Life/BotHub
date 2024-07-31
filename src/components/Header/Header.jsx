@@ -1,6 +1,5 @@
 import React from "react";
 import s from "./header.module.css";
-import logo from "./img/logo.svg";
 import line from "./img/line.svg";
 import DropdownMenu from "../DropDown/DropDown";
 import Translat from "../Translat/Translat";

@@ -33,7 +33,7 @@ const DropdownMenu = () => {
         className={`${s.dropdownButton} ${isOpen ? s.active : ""}`}
         onClick={toggleMenu}
       >
-        {t("products")}{" "}
+        {t("products")}
         <svg
           width="12"
           height="6"
@@ -43,8 +43,8 @@ const DropdownMenu = () => {
           className={`${s.icon} ${isOpen ? s.rotated : ""}`}
         >
           <path
-            d="M1 5L6 1L11 5"
-            stroke=""
+            d="M1 1L6 5L11 1"
+            stroke="white"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -52,37 +52,35 @@ const DropdownMenu = () => {
           />
         </svg>
       </button>
-      {isOpen && (
-        <div className={s.dropdownMenu}>
-          <div className={s.dropdownMenuOne}>
-            <img className={s.imgNav}  src={bothub} alt="bothub" />
-            <div className={s.text}>
-              <span className={s.font600}>Агрегатор нейросетей BotHub</span>
-              <span className={s.font400}>
-                ChatGPT на базе 3.5 и 4.0 версии OpenAI
-              </span>
-            </div>
-          </div>
-          <div className={s.dropdownMenuOne}>
-            <img className={s.imgNav} src={business} alt="business" />
-            <div className={s.text}>
-              <span className={s.font600}>Бизнес бот</span>
-              <span className={s.font400}>
-                ChatGPT для эффективного решения бизнес задач
-              </span>
-            </div>
-          </div>
-          <div className={s.dropdownMenuOne}>
-            <img className={s.imgNav}  src={tg} alt="tg" />
-            <div className={s.text}>
-              <span className={s.font600}>Telegram бот</span>
-              <span className={s.font400}>
-                Удобный бот в Telegram который всегда под рукой
-              </span>
-            </div>
+      <div className={`${s.dropdownMenu} ${isOpen ? s.open : ""}`}>
+        <div className={s.dropdownMenuOne}>
+          <img className={s.imgNav} src={bothub} alt="bothub" />
+          <div className={s.text}>
+            <span className={s.font600}>{t("navTitle3")}</span>
+            <span className={s.font400}>
+              {t("navText3")}
+            </span>
           </div>
         </div>
-      )}
+        <div className={s.dropdownMenuOne}>
+          <img className={s.imgNav} src={business} alt="business" />
+          <div className={s.text}>
+            <span className={s.font600}>{t("navTitle2")}</span>
+            <span className={s.font400}>
+              {t("navText2")}
+            </span>
+          </div>
+        </div>
+        <div className={s.dropdownMenuOne}>
+          <img className={s.imgNav} src={tg} alt="tg" />
+          <div className={s.text}>
+            <span className={s.font600}>{t("navTitle1")}</span>
+            <span className={s.font400}>
+              {t("navText1")}
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

@@ -4,7 +4,7 @@
   align-items: center;
   background: rgba(18, 24, 37, 0.4);
   height: 80px;
-  
+  border-bottom: 1px solid rgba(34, 43, 68, 1);
 }
 .content {
   display: flex;
@@ -17,9 +17,16 @@
 .nav{
   display: flex;
   align-items: center;
+  width: 1043px;
   gap: 34px;
 }
-
+.lvl2{
+  width: 232px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 34px;
+}
 .a{
   color: white;
   font-size: 16px;

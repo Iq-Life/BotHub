@@ -1,6 +1,13 @@
 {
+    "translat": "EU",
     "products": "Products",
     "packages": "Packages",
     "api": "API",
-    "blog": "Blog"
+    "blog": "Blog",
+    "navTitle1": "Telegram bot",
+    "navText1": "A convenient bot in Telegram that is always at hand",
+    "navTitle2": "For business",
+    "navText2": "Corporate subscription for legal entities",
+    "navTitle3": "Neural network aggregator BotHub",
+    "navText3": "ChatGPT based on OpenAI versions 3.5 and 4.0"
 }

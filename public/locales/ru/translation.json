@@ -1,5 +1,12 @@
 {
+    "translat": "RU",
     "products": "Продукты",
     "packages": "Пакеты",
-    "blog": "Блог"
+    "blog": "Блог",
+    "navTitle1": "Telegram бот",
+    "navText1": "Удобный бот в Telegram который всегда под рукой",
+    "navTitle2": "Бизнес бот",
+    "navText2": "ChatGPT для эффективного решения бизнес задач",
+    "navTitle3": "Агрегатор нейросетей BotHub",
+    "navText3": "ChatGPT на базе 3.5 и 4.0 версии OpenAI"
 }
