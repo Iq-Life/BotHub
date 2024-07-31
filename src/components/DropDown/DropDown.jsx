@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import s from "./dropdown.module.css";
 import { useTranslation } from "react-i18next";
-import vector1 from "./img/vector1.svg";
 import tg from "./img/tg.svg";
 import business from "./img/business.svg";
 import bothub from "./img/bothub.svg";
