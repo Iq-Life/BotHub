@@ -39,7 +39,7 @@ const Translat = () => {
           xmlns="http://www.w3.org/2000/svg"
           className={s.planet}
         >
-          <g cliPath="url(#clip0_33_159)">
+          <g clipath="url(#clip0_33_159)">
             <path
               fillRule="evenodd"
               clipRule="evenodd"

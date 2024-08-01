@@ -1,5 +1,6 @@
 import React from "react";
 import s from "./maincontent.module.css";
+import { card } from "../Route/Route.js";
 const MainContent = () => {
   return (
     <div className={s.mainContent}>
@@ -18,6 +19,19 @@ const MainContent = () => {
         </div>
         <div>
           <div className={s.img}></div>
+        </div>
+      </div>
+      <div className={s.mainTwo}>
+        <span className={s.font600}>Возможности ChatGPT</span>
+        <div className={s.gridContent}>
+          {card.map((card, index) => {
+            return (
+              <div key={index} className={s.card}>
+                <span className={s.title}>{card.title}</span>
+                <p className={s.text}>{card.text}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
