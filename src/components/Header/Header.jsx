@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import s from "./header.module.css";
 import line from "./img/line.svg";
 import DropdownMenu from "../DropDown/DropDown";
@@ -7,11 +7,29 @@ import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const { t } = useTranslation();
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1024) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <header className={s.header}>
       <div className={s.content}>
-        <nav className={s.nav}>
           <svg
             className={s.icon}
             width="97"
@@ -52,22 +70,66 @@ const Header = () => {
               fill="white"
             />
           </svg>
+          <svg
+          className={s.svgIcon}
+            width="1"
+            height="34"
+            viewBox="0 0 1 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line
+              x1="0.5"
+              y1="2.18557e-08"
+              x2="0.499999"
+              y2="34"
+              stroke="#222B44"
+            />
+          </svg>
 
-          <img src={line} alt="" />
+        <nav className={`${s.nav} ${menuOpen ? s.active : ""}`}>
           <DropdownMenu />
-          <a src="*" className={s.a}>
+          <a href="#" className={s.a}>
             {t("packages")}
           </a>
-          <a src="*" className={s.a}>
+          <a href="#" className={s.a}>
             {t("api")}
           </a>
-          <a src="*" className={s.a}>
+          <a href="#" className={s.a}>
             {t("blog")}
           </a>
         </nav>
         <div className={s.lvl2}>
           <Translat />
-          <button>{t("login")}</button>
+          <button className={s.auth}>{t("login")}</button>
+          <button className={s.burger} onClick={toggleMenu}>
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 4.5L16 4.5"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+              <path
+                d="M2 8.5L16 8.5"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+              <path
+                d="M2 12.5L16 12.5"
+                stroke="white"
+                strokeWidth="2"
+                strokeLinecap="round"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </header>

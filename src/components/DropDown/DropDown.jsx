@@ -57,27 +57,21 @@ const DropdownMenu = () => {
           <img className={s.imgNav} src={bothub} alt="bothub" />
           <div className={s.text}>
             <span className={s.font600}>{t("navTitle3")}</span>
-            <span className={s.font400}>
-              {t("navText3")}
-            </span>
+            <span className={s.font400}>{t("navText3")}</span>
           </div>
         </div>
         <div className={s.dropdownMenuOne}>
           <img className={s.imgNav} src={business} alt="business" />
           <div className={s.text}>
             <span className={s.font600}>{t("navTitle2")}</span>
-            <span className={s.font400}>
-              {t("navText2")}
-            </span>
+            <span className={s.font400}>{t("navText2")}</span>
           </div>
         </div>
         <div className={s.dropdownMenuOne}>
           <img className={s.imgNav} src={tg} alt="tg" />
           <div className={s.text}>
             <span className={s.font600}>{t("navTitle1")}</span>
-            <span className={s.font400}>
-              {t("navText1")}
-            </span>
+            <span className={s.font400}>{t("navText1")}</span>
           </div>
         </div>
       </div>

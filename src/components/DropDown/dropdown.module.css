@@ -7,12 +7,13 @@
   cursor: pointer;
   padding: 0px;
 }
+
 .dropdownButton:hover {
   color: rgb(71, 133, 255);
 }
 
 .dropdownButton:hover .iconPath {
-  stroke: rgb(71, 133, 255); 
+  stroke: rgb(71, 133, 255);
 }
 
 .icon.rotated {
@@ -31,6 +32,7 @@
 .active .iconPath {
   stroke: rgb(71, 133, 255);
 }
+
 .dropdownMenu {
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +58,7 @@
   transform: scale(1) translate(0, 0);
 }
 
-.dropdownMenuOne{
+.dropdownMenuOne {
   width: 310px;
   height: auto;
   padding: 10px;
@@ -67,20 +69,41 @@
   transition: 0.3s ease;
   box-sizing: border-box;
 }
-.dropdownMenuOne:hover{
+
+.dropdownMenuOne:hover {
   background-color: rgba(49, 62, 98, 1);
   transition: 0.3s ease;
 }
-.text{
+
+.text {
   width: 238px;
 }
-.font600{
+
+.font600 {
   font-weight: 600;
   font-size: 16px;
   display: block;
 }
-.font400{
+
+.font400 {
   font-weight: 400;
   font-size: 12px;
   display: block;
+}
+
+@media (max-width: 1024px) {
+  .open{
+    position: relative;
+    width: 100%;
+    margin: 10px 0px;
+
+  }
+  .dropdownMenu{
+    border-radius: 0px;
+    padding: 10px;
+    transition: 0s;
+  }
+  .dropdownMenuOne{
+    width: 344px;
+  }
 }
