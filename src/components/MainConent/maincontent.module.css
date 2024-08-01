@@ -1,0 +1,66 @@
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fon{
+    position: absolute;
+    inset: 0px;
+    pointer-events: none;
+    width: 100%;
+    z-index: -1;
+    height: 100%;
+    background-image: url(./img/fon.svg);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: repeat-x;
+    opacity: 0.35;
+}
+.mainOne{
+    width: 1290px;
+    height: 100%;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.textMainOne{
+    width: 519px;
+}
+.font700{
+    font-weight: 700;
+    font-size: 46px;
+    display: block;
+}
+.font500{
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    margin-top: 20px;
+}
+.button{
+    margin-top: 35px;
+    display: inline-block;
+    width: 172px;
+    height: 52px;
+    border-radius: 8px;
+    padding: 14px 24px;
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgba(28, 100, 242, 1);
+    color: white;
+    border: none;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 1px 1px 0px inset;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+.button:hover{
+    background-color: rgba(7, 60, 164, 1);
+    transition: 0.3s ease;
+}
+.img{
+    width: 741px;
+    height: 592px;
+    background-image: url(./img/img.png);
+}
