@@ -1,6 +1,9 @@
 import React from "react";
 import s from "./maincontent.module.css";
 import { card } from "../Route/Route.js";
+import img1 from "./img/img.svg";
+import img2 from "./img/img2.svg";
+import img3 from "./img/img3.svg";
 const MainContent = () => {
   return (
     <div className={s.mainContent}>
@@ -18,7 +21,7 @@ const MainContent = () => {
           <button className={s.button}>Начать работу</button>
         </div>
         <div>
-          <div className={s.img}></div>
+          <div className={s.imgMessage}></div>
         </div>
       </div>
       <div className={s.mainTwo}>
@@ -32,6 +35,18 @@ const MainContent = () => {
               </div>
             );
           })}
+        </div>
+      </div>
+      <div className={s.mainThree}>
+        <div className={s.photoСollection}>
+          <img className={s.img1} src={img1} alt="desert" />
+          <img className={s.img2} src={img2} alt="robot" />
+          <img className={s.img3} src={img3} alt="face" />
+        </div>
+        <div className={s.textPhoto}>
+          <span className={s.font600}>Генерация Изображений Через Midjourney </span>
+          <p className={s.font400}>MidJourney - инструмент для создания уникальных изображений. Наши алгоритмы помогут вам воплотить в жизнь вашу идею. Начните генерировать изображения с MidJourney прямо сейчас! Кликните на кнопку ниже, чтобы начать творить.</p>
+          <button className={s.button2}>Попробовать Midjourney</button>
         </div>
       </div>
     </div>
