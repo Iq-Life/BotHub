@@ -1,0 +1,94 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 73px;
+    background: radial-gradient(ellipse at top,rgba(28, 100, 242, 0.2), rgba(8, 16, 39, 0));
+    border-top: 1px solid rgba(34, 43, 68, 1);
+    height: 444px;
+}
+
+.footerContent {
+    width: 1290px;
+    height: 316px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerBlock1 {
+    width: 247px;
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.TermsOfUse{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 247px;
+    height: 143px;
+}
+.font500{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+}
+.footerBlock2{
+    width: 853px;
+    height: 316px;
+    display: flex;
+    justify-content: space-between;
+}
+.information, .products, .links, .blog{
+    width: 151px;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.products{
+    width: 168px;
+    height: 148px;
+
+}
+.links{
+    width: 211px;
+    height: 154px;
+}
+.blog{
+    width: 103px;
+    height: 154px;
+}
+.font600{
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(97, 109, 141, 1);
+}
+.font400{
+    font-weight: 400;
+    font-size: 16;
+    line-height: 22px;
+}
+a{
+    color: white;   
+}
+a:hover{
+    color: rgb(71, 133, 255);
+}
+.footerA{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.footerA:hover .iconPath{
+    fill: rgb(71, 133, 255);
+}
+.footerA:hover a{
+    color: rgb(71, 133, 255);
+}

@@ -44,8 +44,15 @@ const MainContent = () => {
           <img className={s.img3} src={img3} alt="face" />
         </div>
         <div className={s.textPhoto}>
-          <span className={s.font600}>Генерация Изображений Через Midjourney </span>
-          <p className={s.font400}>MidJourney - инструмент для создания уникальных изображений. Наши алгоритмы помогут вам воплотить в жизнь вашу идею. Начните генерировать изображения с MidJourney прямо сейчас! Кликните на кнопку ниже, чтобы начать творить.</p>
+          <span className={s.font600}>
+            Генерация Изображений Через Midjourney{" "}
+          </span>
+          <p className={s.font400}>
+            MidJourney - инструмент для создания уникальных изображений. Наши
+            алгоритмы помогут вам воплотить в жизнь вашу идею. Начните
+            генерировать изображения с MidJourney прямо сейчас! Кликните на
+            кнопку ниже, чтобы начать творить.
+          </p>
           <button className={s.button2}>Попробовать Midjourney</button>
         </div>
       </div>
