@@ -67,6 +67,7 @@ const Footer = () => {
             <a className={s.font400} href="#">О Нас</a>
             <a className={s.font400} href="#">Для инвесторов</a>
           </div>
+          test
           <div className={s.products}>
             <span className={s.font600}>Наши продукты</span>
             <a className={s.font400} href="#">ChatGPT для бизнеса</a>
